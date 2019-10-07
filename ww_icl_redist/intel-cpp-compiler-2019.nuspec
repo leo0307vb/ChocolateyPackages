@@ -3,7 +3,7 @@
   <metadata>
     <id>ww_icl_redist</id>
     <version>2019.5.281</version>
-    <title>AdMobilize Desktop UI</title>
+    <title>Redistributable Libraries for Intel cpp</title>
     <authors>Intel Corporation</authors>
     <owners>Leonardo.vernaza</owners>
     <packageSourceUrl>https://github.com/leo0307vb/ChocolateyPackages/tree/master/ww_icl_redist</packageSourceUrl>
