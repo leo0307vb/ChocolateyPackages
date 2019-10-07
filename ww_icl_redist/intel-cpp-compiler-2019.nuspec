@@ -1,3 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ww_icl_redist</id>
+    <version>2019.5.281</version>
+    <title>AdMobilize Desktop UI</title>
+    <authors>Intel Corporation</authors>
+    <owners>Leonardo.vernaza</owners>
+    <projectUrl>https://www.admobilize.com</projectUrl>
+    <licenseUrl>https://www.admobilize.com/#!/policies/terms</licenseUrl>
+    <iconUrl>https://storage.googleapis.com/assets.admobilize.com/old-dashboard/images/admobilize-logo-03.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>admobilize vision detection analytics ui</tags>
+    <description>
+The redistributable packages are for the end users who use applications that are built with Intel Compilers. Please note that there is one redistributable package for every compiler update. Make sure you download and install the one recommended by the application vendor.
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+<!-- 
+
+
+
+
+
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
@@ -22,4 +49,4 @@ The redistributable packages are for the end users who use applications that are
   <files>
     <file src="tools\**" target="tools" />
   </files>
-</package>
+</package> -->
