@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>ww_icl_redist</id>
+    <id>ww-icl-redist</id>
     <version>2019.5.281</version>
     <title>Redistributable Libraries for Intel cpp</title>
     <authors>Intel Corporation</authors>
