@@ -5,39 +5,18 @@
     <id>ww_icl_redist</id>
     <version>2019.5.281</version>
     <owners>Leonardo.vernaza</owners>
-    <packageSourceUrl>https://github.com/leo0307vb/ChocolateyPackages/tree/master/intel-processor-identification-utility</packageSourceUrl>
-    <title>Intel Processor Identification Utility (Install)</title>
+    <packageSourceUrl>https://github.com/leo0307vb/ChocolateyPackages/tree/master/ww_icl_redist</packageSourceUrl>
+    <title>Redistributable Libraries for Intel® C++</title>
     <authors>Intel Corporation</authors>
     <projectUrl>https://downloadcenter.intel.com/download/28539</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/intel-processor-identification-utility/intel-processor-identification-utility_icon.png</iconUrl>
+    <iconUrl>https://www-ssl.intel.com/sites/sitewide/HAT/50recode/pix/main-logo.png</iconUrl>
     <copyright>Copyright(C) Intel Corporation. All rights reserved</copyright>
     <licenseUrl>https://www.intel.com/content/www/us/en/legal/terms-of-use.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <tags>intel cpp redistributable</tags>
-    <summary>Displays information about your Intel processor.</summary>
+    <tags>intel c++ redistributable</tags>
+    <summary>Redistributable Libraries for Intel® C++.</summary>
     <description>
----
-
-###[choco://intel-processor-identification-utility](choco://intel-processor-identification-utility)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
-![Screenshot of Intel Processor Identification Utility ](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/intel-processor-identification-utility/intel-processor-identification-utility_screenshot.png)
-
-Intel® Processor Identification Utility is a free software that you can install on your machine to identify the actual specification of your processor. It displays the Graphics information, Chipset information, Technologies supported by the processor etc.
-
-This version of the application supports automatic software update so you will be notified when there is a new update available. The list of supported processor that the tool can identify is mentioned below. [List](https://downloadcenter.intel.com/download/28539)
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/intel-processor-identification-utility/readme.md)**
-    
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
-
+The redistributable packages are for the end users who use applications that are built with Intel Compilers. Please note that there is one redistributable package for every compiler update. Make sure you download and install the one recommended by the application vendor.
 </description>
   </metadata>
   <files>
