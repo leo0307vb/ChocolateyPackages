@@ -19,34 +19,3 @@ The redistributable packages are for the end users who use applications that are
     <file src="tools\**" target="tools" />
   </files>
 </package>
-<!-- 
-
-
-
-
-
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
-  <metadata>
-    <id>ww_icl_redist</id>
-    <version>2019.5.281</version>
-    <owners>Leonardo.vernaza</owners>
-    <packageSourceUrl>https://github.com/leo0307vb/ChocolateyPackages/tree/master/ww_icl_redist</packageSourceUrl>
-    <title>Redistributable Libraries for Intel cpp</title>
-    <authors>Intel Corporation</authors>
-    <projectUrl>https://downloadcenter.intel.com/download/28539</projectUrl>
-    <iconUrl>https://www-ssl.intel.com/sites/sitewide/HAT/50recode/pix/main-logo.png</iconUrl>
-    <copyright>Copyright(C) Intel Corporation. All rights reserved</copyright>
-    <licenseUrl>https://www.intel.com/content/www/us/en/legal/terms-of-use.html</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <tags>intel cpp redistributable</tags>
-    <summary>Redistributable Libraries for Intel cpp.</summary>
-    <description>
-The redistributable packages are for the end users who use applications that are built with Intel Compilers. Please note that there is one redistributable package for every compiler update. Make sure you download and install the one recommended by the application vendor.
-</description>
-  </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
-</package> -->
