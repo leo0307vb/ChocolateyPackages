@@ -1,22 +1,37 @@
 $ErrorActionPreference = 'Stop'; # stop on all errors
 
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$tempPath = [System.IO.Path]::GetFullPath("${Env:TEMP}\intelRedistributable")
 
-$url        = 'https://storage.googleapis.com/win-installers.admobilize.com/thirdParty/ww_icl_redist_ia32_2019.5.281.msi'
-$url64      = 'https://storage.googleapis.com/win-installers.admobilize.com/thirdParty/ww_icl_redist_intel64_2019.5.281.msi'
+$fileUrl    = "$tempPath\ww_icl_redist_msi\ww_icl_redist_ia32_2019.5.281.msi"
+$fileUrl64  = "$tempPath\ww_icl_redist_msi\ww_icl_redist_intel64_2019.5.281.msi"
 
-$packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
-  unzipLocation = $toolsDir
-  fileType      = 'MSI'
-  url           = $url
-  url64         = $url64
-  softwareName  = 'intel-redistributable-cpp*'
-  checksum      = '9EC6F0594556EACDECC7F06BBE5471BD72C4D4A64D78731AD2A9E6FAA360EFE5'
-  checksum64    = '96396B4225836A17E482ABEFBD0D575E56CB6329BD0302357AED4C97D04E17CD'
-  checksumType  = 'sha256'
-  silentArgs    = "/quiet"
-  validExitCodes= @(0, 3010, 1641)
+$url        = 'http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/15799/ww_icl_redist_msi_2019.5.281.zip'
+
+$archiveFile = "$tempPath\ww_icl_redist_msi_2019.5.281.zip"
+
+if (-not (Test-Path -Path $archiveFile))
+{
+    Remove-Item -Path $tempPath -Recurse -ErrorAction SilentlyContinue
+    New-Item -ItemType Directory -Path $tempPath | Out-Null
+    Write-Verbose "Downloading '$url' to '$archiveFile.tmp'"
+    (New-Object Net.WebClient).DownloadFile($url, "$archiveFile.tmp")
+    Write-Verbose "Renaming '$archiveFile.tmp' to '$archiveFile'"
+    Rename-Item -Path "$archiveFile.tmp" -NewName (Split-Path -Leaf -Path $archiveFile)
+}
+$extractionDirectory = "$tempPath\ww_icl_redist_msi"
+
+if ((-not (Test-Path -Path $fileUrl)) -AND (-not (Test-Path -Path $fileUrl64)))
+{
+  Add-Type -AssemblyName System.IO.Compression.FileSystem | Out-Null
+  Write-Verbose "Extracting '$archiveFile' to '$extractionDirectory'"
+  [System.IO.Compression.ZipFile]::ExtractToDirectory($archiveFile, $extractionDirectory)
 }
 
-Install-ChocolateyPackage @packageArgs
+
+Install-ChocolateyInstallPackage `
+  -PackageName $env:ChocolateyPackageName `
+  -FileType 'msi' `
+  -SilentArgs '/quiet' `
+  -File64 $fileUrl64 `
+  -File $fileUrl `
+  -ValidExitCodes @(0, 3010)

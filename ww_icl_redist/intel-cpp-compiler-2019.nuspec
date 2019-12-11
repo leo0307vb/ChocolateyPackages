@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>ww-icl-redist</id>
+    <id>intel-redist-cpp</id>
     <version>2019.5.281</version>
-    <title>Redistributable Libraries for Intel cpp</title>
+    <title>Redistributable Libraries for Intel® C++</title>
     <authors>Intel Corporation</authors>
     <owners>Leonardo.vernaza</owners>
     <packageSourceUrl>https://github.com/leo0307vb/ChocolateyPackages/tree/master/ww_icl_redist</packageSourceUrl>
