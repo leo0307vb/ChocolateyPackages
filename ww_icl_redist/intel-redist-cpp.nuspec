@@ -12,6 +12,9 @@
     <iconUrl>https://www-ssl.intel.com/sites/sitewide/HAT/50recode/pix/main-logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>intel cpp redistributable</tags>
+    <summary>
+    The redistributable packages are for the end users who use applications that are built with Intel Compilers. Please note that there is one redistributable package for every compiler update. Make sure you download and install the one recommended by the application vendor.
+    </summary>
     <description>
 The redistributable packages are for the end users who use applications that are built with Intel Compilers. Please note that there is one redistributable package for every compiler update. Make sure you download and install the one recommended by the application vendor.
     </description>
