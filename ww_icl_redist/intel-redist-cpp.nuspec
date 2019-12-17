@@ -12,7 +12,7 @@
     <bugTrackerUrl>https://github.com/leo0307vb/ChocolateyPackages/issues</bugTrackerUrl>
     <docUrl>https://software.intel.com/en-us/articles/redistributable-libraries-for-intel-c-and-fortran-2019-compilers-for-windows</docUrl>
     <licenseUrl>https://www.intel.com/content/www/us/en/legal/terms-of-use.html</licenseUrl>
-    <iconUrl>https://www-ssl.intel.com/sites/sitewide/HAT/50recode/pix/main-logo.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/leo0307vb/ChocolateyPackages/b2f9094785ed7b529e5a6dbd5dd322a6862b069f/ww_icl_redist/main-logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>intel cpp redistributable</tags>
     <summary>
