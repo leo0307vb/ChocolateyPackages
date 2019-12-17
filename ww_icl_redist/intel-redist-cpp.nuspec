@@ -8,6 +8,9 @@
     <owners>Leonardo.vernaza</owners>
     <packageSourceUrl>https://github.com/leo0307vb/ChocolateyPackages/tree/master/ww_icl_redist</packageSourceUrl>
     <projectUrl>https://software.intel.com/en-us/articles/redistributable-libraries-for-intel-c-and-fortran-2019-compilers-for-windows</projectUrl>
+    <projectSourceUrl>https://software.intel.com/en-us/articles/redistributable-libraries-for-intel-c-and-fortran-2019-compilers-for-windows</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/leo0307vb/ChocolateyPackages/issues</bugTrackerUrl>
+    <docUrl>https://software.intel.com/en-us/articles/redistributable-libraries-for-intel-c-and-fortran-2019-compilers-for-windows</docUrl>
     <licenseUrl>https://www.intel.com/content/www/us/en/legal/terms-of-use.html</licenseUrl>
     <iconUrl>https://www-ssl.intel.com/sites/sitewide/HAT/50recode/pix/main-logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
