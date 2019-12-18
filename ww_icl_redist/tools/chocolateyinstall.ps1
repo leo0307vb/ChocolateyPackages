@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 
 $packageName = 'intelCppZip'
-$filePath    = Get-PackageCacheLocation
+$filePath    = [System.IO.Path]::GetFullPath("${Env:TEMP}\intelRedistributable")
 $fileUrl    = "$filePath\ww_icl_redist_ia32_2019.5.281.msi"
 $fileUrl64  = "$filePath\ww_icl_redist_intel64_2019.5.281.msi"
 $checksum   = "9ec6f0594556eacdecc7f06bbe5471bd72c4d4a64d78731ad2a9e6faa360efe5"
