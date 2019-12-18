@@ -10,7 +10,7 @@
     <projectUrl>https://software.intel.com/en-us/articles/redistributable-libraries-for-intel-c-and-fortran-2019-compilers-for-windows</projectUrl>
     <projectSourceUrl>https://software.intel.com/en-us/articles/redistributable-libraries-for-intel-c-and-fortran-2019-compilers-for-windows</projectSourceUrl>
     <bugTrackerUrl>https://github.com/leo0307vb/ChocolateyPackages/issues</bugTrackerUrl>
-    <docUrl>https://software.intel.com/en-us/articles/redistributable-libraries-for-intel-c-and-fortran-2019-compilers-for-windows</docUrl>
+    <docsUrl>https://software.intel.com/en-us/articles/redistributable-libraries-for-intel-c-and-fortran-2019-compilers-for-windows</docsUrl>
     <licenseUrl>https://www.intel.com/content/www/us/en/legal/terms-of-use.html</licenseUrl>
     <iconUrl>https://rawcdn.githack.com/leo0307vb/ChocolateyPackages/b2f9094785ed7b529e5a6dbd5dd322a6862b069f/ww_icl_redist/main-logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
